@@ -14,5 +14,6 @@ services:
   node_killer:
     build: .
     command: python3 /scripts/node_killer.py
+    network_mode: host
     volumes:
       - ./scripts:/scripts
