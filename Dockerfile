@@ -8,7 +8,7 @@ RUN apt-get install -y ros-${ROS_DISTRO}-cv-bridge ros-${ROS_DISTRO}-image-trans
 ENV WS=/root/catkin_ws
 RUN mkdir -p ${WS}/src
 WORKDIR ${WS}
-COPY packages/remote_driving src/remote_driving
+COPY packages/wam_common src/wam_common
 
 RUN . /opt/ros/${ROS_DISTRO}/setup.sh && catkin_make && . devel/setup.sh
 
