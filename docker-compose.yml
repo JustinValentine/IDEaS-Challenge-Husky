@@ -10,3 +10,6 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ~/.Xauthority:/root/.Xauthority
       - ./launch/camera.launch:/root/catkin_ws/camera.launch
+
+  node_killer:
+    command: rosnode kill /joy_teleop/joy_node
