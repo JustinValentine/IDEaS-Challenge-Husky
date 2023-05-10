@@ -1,7 +1,7 @@
 services:
   master:
     image: ros:noetic-ros-core
-    command: roscore
+    # command: roscore
     environment:
       DISPLAY: $DISPLAY
     network_mode: host
