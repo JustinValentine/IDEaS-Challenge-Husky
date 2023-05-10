@@ -12,4 +12,7 @@ services:
       - ./launch/camera.launch:/root/catkin_ws/camera.launch
 
   node_killer:
-    command: rosnode kill /joy_teleop/joy_node
+    build: .
+    command: python3 /scripts/node_killer.py
+    volumes:
+      - ./scripts:/scripts
