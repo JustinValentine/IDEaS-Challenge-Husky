@@ -1,15 +1,15 @@
 services:
-  master:
-    image: ros:noetic-ros-core
-    # command: roscore
-    environment:
-      DISPLAY: $DISPLAY
-    network_mode: host
-    restart: always
-    privileged: true
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
-      - ~/.Xauthority:/root/.Xauthority
+  # master:
+  #   image: ros:noetic-ros-core
+  #   command: roscore
+  #   environment:
+  #     DISPLAY: $DISPLAY
+  #   network_mode: host
+  #   restart: always
+  #   privileged: true
+  #   volumes:
+  #     - /tmp/.X11-unix:/tmp/.X11-unix
+  #     - ~/.Xauthority:/root/.Xauthority
 
   cam0:
     build: .
