@@ -13,8 +13,8 @@ services:
 
   cam0:
     build: .
-    depends_on:
-      - master
+    # depends_on:
+    #   - master
     environment:
       DISPLAY: $DISPLAY
     command: roslaunch --wait camera.launch name:=cam0 video_device:=/dev/video2
