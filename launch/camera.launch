@@ -5,8 +5,8 @@
     <node name="$(arg name)" pkg="usb_cam" type="usb_cam_node" output="screen">
         <param name="video_device" value="$(arg video_device)"></param> 
         <param name="pixel_format" value="yuyv"></param>
-        <param name="image_width" value="1920"/>
-        <param name="image_height" value="1080"/> 
+        <param name="image_width" value="1920"></param>
+        <param name="image_height" value="1080"></param> 
         <param name="framerate" value="15"></param> 
         <param name="io_method" value="mmap"></param>
 </launch>
