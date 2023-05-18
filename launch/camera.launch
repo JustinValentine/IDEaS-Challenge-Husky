@@ -9,4 +9,5 @@
         <param name="image_height" value="1080"></param> 
         <param name="framerate" value="15"></param> 
         <param name="io_method" value="mmap"></param>
+    </node>
 </launch>
